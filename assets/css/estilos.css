@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #153d5b;
+    color: white;
+    display: flex;
+    height: 8rem;
+    gap: 2rem;
+}
+
+.logo2{
+    padding: 2rem;
+    height: 5rem;
+    width: 7rem;
+}
+
+.burger{
+    padding: 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(152, 166, 192);
+    text-align: center;
+    height: 3.5rem;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.precio{
+    display: flex;
+    background-color: white;    
+    color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    align-items: center;
+}
+
+.dropdown{
+    height: 1rem;
+    width: 1rem;
+    padding-left: 8rem;
+}
+
+section{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+button{
+    background-color: #00579c;
+    color: white;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+
+.lose{
+    border: solid 1px rgb(41, 41, 41);
+    border-radius: 0.2rem;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.lyd{
+    height: 12.8rem;
+    width: 12.8rem;
+    object-fit: cover;
+}
+
+.pc{
+    border: solid 1px rgb(41, 41, 41);
+    border-radius: 0.2rem;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.partycrasher{
+    height: 12.8rem;
+    width: 12.8rem;
+    object-fit: cover;
+}
+
+.cs{
+    border: solid 1px rgb(41, 41, 41);
+    border-radius: 0.2rem;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.career{
+    height: 12.8rem;
+    width: 12.8rem;
+    object-fit: cover;
+}
+
+.mp{
+    border: solid 1px rgb(41, 41, 41);
+    border-radius: 0.2rem;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.mute{
+    height: 12.8rem;
+    width: 12.8rem;
+    object-fit: cover;
+}
+
+.page{
+    border: solid 1px rgb(95, 94, 94);
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;  
+    justify-content: center;
+    align-items: center;
+    width: 7.1rem;
+    text-align: center;
+}
+
+.number1{
+    height: 2rem;
+    width: 2rem;
+    font-size: x-large;
+    border-right: solid 1px rgb(95, 94, 94);
+}
+
+.number2{
+    height: 2rem;
+    width: 2rem;
+    font-size: x-large;
+    border-right: solid 1px rgb(95, 94, 94);
+}
+
+.number3{
+    height: 2rem;
+    width: 2rem;
+    font-size: x-large;
+}
+
+.chevronl{
+    height: 2rem;
+    width: 2rem;
+    border-right: solid 1px rgb(95, 94, 94);
+}
+
+.chevronr{
+    height: 2rem;
+    width: 2rem;
+    border-left: solid 1px rgb(95, 94, 94);
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-color: #0b2132;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: 3rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fb{
+    height: 2rem;
+    width: 2rem;
+}
+
+.ig{
+    height: 2rem;
+    width: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "section section"
+        "footer footer";
+    }
+
+    div.menu {
+        display: none;
+    }
+
+    div.pc {
+        display: none;
+    }
+
+    div.cs {
+        display: none;
+    }
+
+    div.mp {
+        display: none;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (min-width: 922px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-areas: 
+        "nav header header"
+        "nav section section"
+        "footer section section";
+        grid-template-columns: 12rem 1fr
+    }
+
+    .menu {
+        display: flex;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 30px;
+    }
+
+    nav{
+        flex-direction: column;
+        height: 92vh;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .precio{
+        width: 82rem;
+    }
+
+    .dropdown{
+        padding-left: 78rem;
+    }
+
+    section{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .lose{
+        height: 17rem;
+        width: 15rem;
+    }
+
+    .pc{
+        height: 17rem;
+        width: 15rem;
+    }
+
+    .cs{
+        height: 17rem;
+        width: 15rem;
+    }
+
+    .mp{
+        height: 17rem;
+        width: 15rem;
+    }
+
+    section:last-child {
+        flex-direction: row;
+    }
+
+    .page{
+        height: 2rem;
+        margin-top: 13rem;
+    }
+
+    footer{
+        height: 4rem;
+    }
+
+}
